@@ -3,10 +3,10 @@
 <!--[if gt IE 8]><!-->
 <html lang="en">
 <!--<![endif]-->
-${ require('./head.html') }
+{{> head title=../pageTitle }}
 <body>
-  ${ require('./skipnav.html') }
-  ${ require('./fsa-browser-upgrade.html') }
+  {{> skipnav }}
+  {{> fsa-browser-upgrade }}
   <header>
   
   </header>
@@ -14,7 +14,7 @@ ${ require('./head.html') }
   <main id="main-content" tabindex="-1">
     <div class="fsa-section">
       <div class="fsa-section__bd">
-        <h1>Baseline Application</h1>
+        <h1>{{ pageHeader}}</h1>
 
         <p class="fsa-text--lead">Baseline Template for Webpack version of FSA Design System.</p>
 
@@ -29,6 +29,6 @@ ${ require('./head.html') }
     
   </footer>
 
-  ${ require('./scripts.html') }
+  {{> scripts }}
   </body>
 </html>

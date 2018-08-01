@@ -6,6 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const HTMLBeautifyPlugin = require('html-beautify-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const HandlebarsWebpackPlugin = require('handlebars-webpack-plugin');
 const path = require('path');
 
 
@@ -30,6 +31,19 @@ module.exports = {
               interpolate: true,
               removeAttributeQuotes: false
             }
+          }
+        ]
+      },
+      {
+        test: /\.hbs$/,
+        use: [
+          {
+            loader: "handlebars-loader",
+            query: {
+              partialDirs: [
+                  path.join(__dirname, '/src/includes/')
+              ]
+          }
           }
         ]
       },
@@ -94,7 +108,7 @@ module.exports = {
     
     new HTMLWebpackPlugin({
       // the template you want to use
-      template: "./src/includes/base.html",
+      template: "./src/includes/base.hbs",
       // the output file name
       filename: path.join(__dirname, "./dist/index.html"),
       inject: "body"
