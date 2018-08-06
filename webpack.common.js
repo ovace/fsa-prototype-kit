@@ -10,7 +10,7 @@ const path = require('path');
 
 
 module.exports = {
-  
+
   devtool: 'source-map',
 
   entry:  {
@@ -19,7 +19,7 @@ module.exports = {
 
   module: {
     rules: [
-      
+
       {
         test: /\.html$/,
         use: [
@@ -37,7 +37,7 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: [
-          { 
+          {
             loader: 'babel-loader'
           }
         ]
@@ -48,7 +48,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader'           
+          'sass-loader'
         ]
       },
       {
@@ -91,7 +91,7 @@ module.exports = {
         to: './img/'
       }
     ]),
-    
+
     new HTMLWebpackPlugin({
       // the template you want to use
       template: "./src/includes/base.html",
@@ -99,7 +99,7 @@ module.exports = {
       filename: path.join(__dirname, "./dist/index.html"),
       inject: "body"
     }),
-    
+
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
@@ -112,10 +112,10 @@ module.exports = {
           html: {
               end_with_newline: true,
               indent_size: 2,
-              indent_with_tabs: true,
+              indent_with_tabs: false,
               indent_inner_html: true,
               preserve_newlines: true,
-              unformatted: ['p', 'i', 'b', 'span']
+              unformatted: ['i', 'b', 'strong', 'em']
           }
       },
       replace: [ ' type="text/javascript"' ]
@@ -127,5 +127,5 @@ module.exports = {
     alias: {
       'fsaStyleScss' : path.join(__dirname, 'node_modules/fsa-style/src/stylesheets/fsa-style.scss')
     }
-  }  
+  }
 };

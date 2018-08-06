@@ -5,30 +5,43 @@
 <!--<![endif]-->
 ${ require('./head.html') }
 <body>
+
   ${ require('./skipnav.html') }
   ${ require('./fsa-browser-upgrade.html') }
+
   <header>
-  
+    ${ require('./header.html') }
+    <nav>
+      ${ require('./nav-global.html') }
+    </nav>
   </header>
 
   <main id="main-content" tabindex="-1">
     <div class="fsa-section">
       <div class="fsa-section__bd">
-        <h1>Baseline Application</h1>
+
+        <h1>Hello Baseline Application</h1>
 
         <p class="fsa-text--lead">Baseline Template for Webpack version of FSA Design System.</p>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        <p>Totam animi numquam perspiciatis porro quidem est reprehenderit officia</p>
+        <p>Velit laboriosam facilis omnis ut libero repudiandae assumenda</p>
+        <p>Iste rem fugiat consectetur! Provident.</p>
+        <ul>
+          <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+          <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+          <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+        </ul>
 
       </div>
-
     </div>
-
   </main>
 
   <footer>
-    
+    ${ require('./footer.html') }
   </footer>
 
   ${ require('./scripts.html') }
+
   </body>
 </html>
