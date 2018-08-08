@@ -9,12 +9,13 @@ import 'fsaStyleScss';
 var baseTemplate = require('./includes/base.hbs');
 
 document.addEventListener("DOMContentLoaded", function() {
-	document.body.appendChild( 
-    baseTemplate(
-      { 
-        pageTitle: "Handlebars Template",
-        pageHeader: "Baseline Handlebars Application"
-      }
-    )
+  
+  baseTemplate(
+    { 
+      pageTitle: "Handlebars Template",
+      pageHeader: "Baseline Handlebars Application"
+    }
   );
+  
+  //document.body.appendChild( newNode );
 });

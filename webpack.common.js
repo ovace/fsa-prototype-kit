@@ -43,7 +43,7 @@ module.exports = {
               partialDirs: [
                   path.join(__dirname, '/src/includes/')
               ]
-          }
+            }
           }
         ]
       },
