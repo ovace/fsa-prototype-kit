@@ -3739,13 +3739,6 @@ handlebars-loader@^1.7.0:
     loader-utils "1.0.x"
     object-assign "^4.1.0"
 
-handlebars-template-loader@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/handlebars-template-loader/-/handlebars-template-loader-1.0.0.tgz#264a8fdc356aa04d09ee08788c2980d710b01809"
-  dependencies:
-    fastparse "^1.1.1"
-    loader-utils "^0.2.15"
-
 handlebars-webpack-plugin@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/handlebars-webpack-plugin/-/handlebars-webpack-plugin-1.5.0.tgz#b40b743bd20089321e6f2800511858e53cf7d2a2"
@@ -5021,7 +5014,7 @@ loader-utils@1.0.x:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
-loader-utils@^0.2.15, loader-utils@^0.2.16:
+loader-utils@^0.2.16:
   version "0.2.17"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
   dependencies:

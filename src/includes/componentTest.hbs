@@ -1,0 +1,16 @@
+<div {{ ATTR_BOOL }}>
+  <div class="component-test {{ CLASS_EXTRA }}">
+    <div class="component-test__hd">
+      <h3 class="component-test__title">{{ TITLE }}</h3>
+    </div>
+    <div class="component-test__bd">
+      <div class="component-test__list">
+        <li class="component-test__list-item">list item</li>
+        <li class="component-test__list-item">list item</li>
+        <li class="component-test__list-item">list item</li>
+      </div>
+    </div>
+    <div class="component-test__ft">foot</div>
+  </div>
+  {{> componentNest TITLE="Nested hbs component" ATTR_BOOL="hidden" }}
+</div>

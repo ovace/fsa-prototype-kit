@@ -1,0 +1,40 @@
+.component-test {
+
+  & {  }
+
+  &--highlight {
+    border: 8px solid yellow;
+  }
+
+  &--highlight-small {
+    border-width: 2px;
+  }
+
+  &__hd {
+    padding: 8px;
+    background-color: #ccc;
+  }
+
+  &__bd {
+    padding: 8px;
+    background-color: white;
+  }
+
+  &__ft {
+    padding: 8px;
+    background-color: #f1f1f1;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__list {
+    margin: 0;
+  }
+
+  &__list-item {
+    margin: 0;
+  }
+
+}

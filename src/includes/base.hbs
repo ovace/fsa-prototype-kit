@@ -3,21 +3,105 @@
 <!--[if gt IE 8]><!-->
 <html lang="en">
 <!--<![endif]-->
-{{> head title='Casey Hill' }}
+{{> head title='Prototype Kit Test' }}
 <body>
   {{> skipnav }}
   {{> fsa-browser-upgrade }}
   <header>
-  
   </header>
 
   <main id="main-content" tabindex="-1">
     <div class="fsa-section">
       <div class="fsa-section__bd">
-        <h1>{{ pageHeader }}</h1>
 
-        <p class="fsa-text--lead">Baseline Template for Webpack version of FSA Design System.</p>
+        <h1>Page Title</h1>
 
+        <div class="hbs-play">
+
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title">componentAuthor.hbs</h2>
+            <p>{{> componentAuthor LABEL="Author" AUTHOR="Francis Rupert" }}</p>
+            <p>{{> componentAuthor LABEL="Previous Author" }}</p>
+          </div>
+
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title">componentCard.hbs</h2>
+            <div class="fsa-grid">
+              <div class="fsa-grid__1/1 fsa-grid__1/3@s">
+                {{> componentCard francis="variation" }}
+              </div>
+              <div class="fsa-grid__1/1 fsa-grid__1/3@s">
+                {{> componentCard casey="variation" }}
+              </div>
+              <div class="fsa-grid__1/1 fsa-grid__1/3@s">
+                {{> componentCard joe="variation" }}
+              </div>
+            </div>
+          </div>
+
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title">componentLorem.hbs</h2>
+            <p>{{> componentLorem lorem="variation" }}</p>
+            <p>{{> componentLorem ipsum="variation" }}</p>
+            <p>{{> componentLorem dolor="variation" }}</p>
+          </div>
+
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title"> componentItems.hbs > fsa-label.hbs</h2>
+            {{> componentItems }}
+          </div>
+          
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title"> fsa-field.hbs</h2>
+            {{> fsa-field
+              ID="blah-0003"
+              LABEL="Name"
+            }}
+            {{> fsa-field
+              ID="blah-0001"
+              REQUIRED=""
+              ERROR=""
+              LABEL_DESC="Optional"
+              CLASS_EXTRA="fic-field"
+              BEHAVIOR="validate-commodity"
+              LABEL="Commodity Name"
+              INPUT_VALUE="Wheat"
+              HELP="Alpha characters, no numbers or special characters"
+              MESSAGE="This field is required"
+            }}
+            {{> fsa-field
+              ID="blah-0002"
+              REQUIRED="TRUE"
+              ERROR="TRUE"
+              LABEL_DESC="Required"
+              CLASS_EXTRA=""
+              BEHAVIOR=""
+              LABEL="Abbreviation"
+              INPUT_VALUE=""
+              HELP="No more than 3 characters"
+              MESSAGE="This field is required"
+            }}
+          </div>
+
+          <div class="hbs-play__item">
+            <h2 class="hbs-play__title">componentTest.hbs</h2>
+            <div class="fsa-grid">
+              <div class="fsa-grid__1/1 fsa-grid__1/2@s">
+                {{> componentTest
+                  TITLE="Component Test 1"
+                  CLASS_EXTRA="component-test--highlight component-test--highlight-small"
+                }}
+              </div>
+              <div class="fsa-grid__1/1 fsa-grid__1/2@s">
+                {{> componentTest
+                  TITLE="Component Test 2"
+                  CLASS_EXTRA="component-test--highlight"
+                }}
+              </div>
+            </div>
+          </div>
+
+        </div>
 
       </div>
 
@@ -26,7 +110,7 @@
   </main>
 
   <footer>
-    
+
   </footer>
 
   {{> scripts }}
