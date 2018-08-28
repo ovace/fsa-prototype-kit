@@ -1,21 +1,17 @@
-//
+////////////////////////////////////////////////////////////////////////////////
 'use strict';
 
-//import './stylesheets/base.scss';
+// SASS ////////////////////////////////////////////////////////////////////////
 
 // import variable from webpack.common.js to reference FSA Style in node_modules
 import 'fsaStyleScss';
 
-var baseTemplate = require('./includes/base.hbs');
+// Project-specific styles
 
-document.addEventListener("DOMContentLoaded", function() {
-  
-  baseTemplate(
-    { 
-      pageTitle: "Handlebars Template",
-      pageHeader: "Baseline Handlebars Application"
-    }
-  );
-  
-  //document.body.appendChild( newNode );
-});
+
+// JS //////////////////////////////////////////////////////////////////////////
+
+//
+import jQuery from 'jquery';
+
+// Project-specific JS
