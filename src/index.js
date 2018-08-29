@@ -1,17 +1,17 @@
 ////////////////////////////////////////////////////////////////////////////////
 'use strict';
 
-// SASS ////////////////////////////////////////////////////////////////////////
+//
+import jQuery from 'jquery';
 
-// import variable from webpack.common.js to reference FSA Style in node_modules
-import 'fsaStyleScss';
+// FSA-Style imports from node_modules - variables set in webpack.common.js
+import 'FSA-STYLE-SCSS';
+import 'FSA-STYLE-JS';
+
 
 // Project-specific styles
 
 
-// JS //////////////////////////////////////////////////////////////////////////
-
-//
-import jQuery from 'jquery';
-
 // Project-specific JS
+
+//import './js/fsa-style-docs.min.js';

@@ -26,7 +26,8 @@ module.exports = {
   resolve: {
     modules: ['node_modules', 'src'],
     alias: {
-      'fsaStyleScss' : path.join(__dirname, 'node_modules/fsa-style/src/stylesheets/fsa-style.scss')
+      'FSA-STYLE-SCSS' : path.join(__dirname, 'node_modules/fsa-style/src/stylesheets/fsa-style.scss'),
+      'FSA-STYLE-JS' : path.join(__dirname, 'node_modules/fsa-style/src/js/main.js')
     }
   },
 
